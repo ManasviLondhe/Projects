@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertify</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=toggle_on" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="main-body">
+    <nav>
+      <div class="nav-1">
+        <h2>Convertify</h2>
+      </div>
+
+      <div class="nav-2">
+        <a href="/navBar/about/about.html">About</a>
+        <a href="/navBar/available_converters/converters.html">Converters</a>
+
+        <svg id="light-mode-btn" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M280-240q-100 0-170-70T40-480q0-100 70-170t170-70h400q100 0 170 70t70 170q0 100-70 170t-170 70H280Zm0-66.67h400q72 0 122.67-50.66Q853.33-408 853.33-480t-50.66-122.67Q752-653.33 680-653.33H280q-72 0-122.67 50.66Q106.67-552 106.67-480t50.66 122.67Q208-306.67 280-306.67Zm400.63-66q44.7 0 76.04-31.29 31.33-31.3 31.33-76 0-44.71-31.29-76.04-31.3-31.33-76-31.33-44.71 0-76.04 31.29-31.34 31.3-31.34 76 0 44.71 31.3 76.04 31.29 31.33 76 31.33ZM480-480Z"/></svg>
+
+        <svg id="dark-mode-btn" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M280-240q-100 0-170-70T40-480q0-100 70-170t170-70h400q100 0 170 70t70 170q0 100-70 170t-170 70H280Zm0-66.67h400q72 0 122.67-50.66Q853.33-408 853.33-480t-50.66-122.67Q752-653.33 680-653.33H280q-72 0-122.67 50.66Q106.67-552 106.67-480t50.66 122.67Q208-306.67 280-306.67Zm-.71-66q44.71 0 76.04-31.29 31.34-31.3 31.34-76 0-44.71-31.3-76.04-31.29-31.33-76-31.33-44.7 0-76.04 31.29-31.33 31.3-31.33 76 0 44.71 31.29 76.04 31.3 31.33 76 31.33ZM480-480Z"/></svg>
+      </div>
+    </nav>
+
+    <div class="content">
+
+   <div class="left">
+    <h1>Convertify &#45; Your Smart Conversion Partner.</h1>
+
+    <p>A clean and simple tool for converting length, weight, temperature, speed, and more.
+      Useful for students and people looking for quick and clear results.
+    </p>
+  </div>
+
+
+      <div class="right">
+
+        <div class="slider">
+          
+          <button onclick="prevSlide()">&lt;</button>
+
+          <div class="slide">
+            <a href="Weight_Converter/weight.html" target="_blank">
+              <img src="weightImage.webp" alt="weightImage">
+            </a>
+            <p>Weight Converter</p>
+          </div>
+
+          <div class="slide">
+            <a href="Temprature_Converter/temp.html" target="_blank">
+              <img src="tempratureImage.webp" alt="tempratureImage">
+            </a>
+            <p>Temprature Converter</p>
+          </div>
+
+          <div class="slide">
+            <a href="Length_Converter/length.html" target="_blank">
+              <img src="lengthImage.webp" alt="lengthImage">
+            </a>
+            <p>Length Converter</p>
+          </div>
+
+          <div class="slide">
+            <a href="Speed_Converter/speed.html" target="_blank">
+              <img src="speedImage.webp" alt="speedImage">
+            </a>
+            <p>Speed Converter</p>
+          </div>
+
+          <div class="slide">
+            <a href="Time_Converter/time.html" target="_blank">
+              <img src="timeImage.webp" alt="timeImage">
+            </a>
+            <p>Time Converter</p>
+          </div>
+
+          <button onclick="nextSlide()">&gt;</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="animation.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

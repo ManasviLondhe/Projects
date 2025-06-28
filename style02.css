@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.8vw;
+  color:darkmagenta;
+}
+
+
+.container{
+  height:20vw;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+  gap:5vw;
+
+}
+
+.box{
+  display: flex;
+  align-items:center;
+
+  gap:0.5vw;
+  font-size:2.5vw;
+}
+
+.box label{
+  font-weight:500;
+}
+
+.box input{
+  font-size:1.5vw;
+  text-align: center;
+}
+
+.box select{
+  font-size:1.5vw;
+  background-color: #ffeafecc;
+}
+
+.box option{
+  font-size:1.5vw;
+}
+
+.screen-result{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height:10vw;
+  color:rgb(0, 13, 255);
+  font-weight:500;
+  font-size:2.5vw;
+}
+
+.btn-container{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+button{
+  text-align: center;
+  font-size:1.5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border:none;
+  cursor: pointer;
+  color:white;
+}
+
+#convert-btn{
+  background-image: radial-gradient(
+  rgb(59, 230, 12),
+  rgb(0, 116, 2)
+);
+  border-radius:1vw;
+  padding:0.5vw 1.2vw;
+}
+
+#reset-btn{
+  background-image: radial-gradient(
+  rgb(249, 16, 8),
+  rgba(116, 0, 0, 0.927)
+);
+  border-radius:1vw;
+  padding:0.3vw 1vw;
+}
+
+#convert-btn:hover, #reset-btn:hover{
+  opacity:0.7;
+  box-shadow: 0 0 0.3vw black;
+}
+
+@media (max-width:600px){
+
+  .container{
+    flex-direction: column;
+    width:100%;
+    gap:5vw;
+    padding:2vw;
+  }
+    
+  h1{
+    font-size:5vw;
+  }
+
+  .box label{
+    font-size: 3vw;
+  }
+
+  .box input, .box select{
+    font-size: 2.5vw;
+  }
+
+  .screen-result{
+    font-size:3vw;
+  }
+
+  button{
+  font-size:2vw;
+  }
+
+}
