@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="../style02.css">
+    <link rel="icon" type="image/svg+xml" href="weight-convert.svg">
+  </head>
+   <body>
+
+     
+    <h1>Weight Converter</h1>
+
+    <div class="container">
+
+        <div class="box">
+
+            <label for="convert-from">From : </label>
+            <input type="number" id="convert-from">
+            <select name="units" id="select-from">
+              <option value="milligram">Milligram (mg)</option>
+              <option value="gram">Gram (g)</option>
+              <option value="kilogram">Kilogram (kg)</option>
+              <option value="quintals">Quintal (qt)</option>
+              <option value="tonne">Tonne (t)</option>
+            </select>
+
+        </div>
+
+        <div class="box">
+
+            <label for="convert-to">To : </label>
+            <input type="number" id="convert-to" readonly>
+        
+            <select name="units" id="select-to">
+          <option value="milligram">Milligram (mg)</option>
+          <option value="gram">Gram (g)</option>
+          <option value="kilogram">Kilogram (kg)</option>
+          <option value="quintals">Quintal (qt)</option>
+          <option value="tonne">Tonne (t)</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="screen-result">
+
+    </div>
+
+    <div class="btn-container">
+
+        <button id="convert-btn" onclick="converter(); 
+        showResult();">Convert</button>
+        
+        <button id="reset-btn" onclick="reset();">Reset</button>
+        
+    </div>   
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsap.js"></script> -->
+    <script src="weight.js"></script>
+  </body>
+</html> 
+
