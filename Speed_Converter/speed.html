@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter</title>
+    <link rel="stylesheet" href="../style02.css">
+    <link rel="icon" type="image/svg+xml" href="speed-convert.svg">
+</head>
+<body>
+
+    <h1>Speed Converter</h1> 
+    
+    <div class="container">
+
+        <div class="box">
+
+            <label for="convert-from">From : </label>
+            <input type="number" id="convert-from">
+
+            <select name="units" id="select-from">
+                <option value="mm-per-sec"> Millimeter per second (mm/s) </option>
+                <option value="cm-per-sec"> Centimeter per second (cm/s) </option>
+                <option value="meter-per-sec"> Meter per second (m/s) </option>
+                <option value="km-per-sec"> Kilometer per second (km/s) </option>
+                <option value="km-per-hour"> Kilometer per hour (km/h) </option>
+                <option value="mile-per-hour"> Miles per hour (mph) </option>
+                <option value="knot"> knot (kn) </option>
+            </select>
+
+        </div>
+
+        <div class="box">
+
+            <label for="convert-to">To : </label>
+            <input type="number" id="convert-to">
+        
+            <select name="units" id="select-to">
+                <option value="mm-per-sec"> Millimeter per second (mm/s) </option>
+                <option value="cm-per-sec"> Centimeter per second (cm/s) </option>
+                <option value="meter-per-sec"> Meter per second (m/s) </option>
+                <option value="km-per-sec"> Kilometer per second (km/s) </option>
+                <option value="km-per-hour"> Kilometer per hour (km/h) </option>
+                <option value="mile-per-hour"> Miles per hour (mph) </option>
+                <option value="knot"> knot (kn) </option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="screen-result">
+
+    </div>
+
+    <div class="btn-container">
+
+        <button id="convert-btn" onclick="converter(); 
+        showResult();">Convert</button>
+        
+        <button id="reset-btn" onclick="reset();">Reset</button>
+        
+    </div>  
+
+
+<script src="speed.js"></script>
+</body>
+</html>
